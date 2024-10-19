@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s all ease;
+}
+
+body{
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px 40px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar img{
+    width: 100px;
+}
+
+.Container{
+    max-height: 70vh;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px #000;
+    padding: 0px;
+    margin: 50px auto 0 auto;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scrollbar-color: #000;
+}
+
+.Container input[type="text"]{  
+    outline: none;
+}
+
+.Container .Container_header{
+    display: flex;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 20px;
+    background-color: #00000080;
+}
+
+.Container input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.Container input[type="submit"]{
+    width: max-content;
+    background-color: #212121;
+    border: none;
+    color: #fff;
+}
+
+.Container input[type="submit"]:hover{
+    background-color: #333;
+    cursor: pointer;
+    transform: scaleX(1.2);
+}
+
+.Container_main ul{
+    list-style: none;
+    padding: 20px;
+}
+
+input[type="checkbox"]{
+    width: max-content;
+    margin: 0px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #727272;
+}
+
+.Container_main ul li {
+    user-select: none;
+    cursor: pointer; 
+    background-color: #00000020;
+    border-radius: 10px;
+    margin: 10px 0 20px 0;
+    position: relative;
+    padding: 20px 70px 20px 43px;
+    overflow: hidden;
+}
+
+.Container_main ul li span {
+    padding-right: 40px;
+}
+
+.Container_main ul li input{
+    position: absolute;
+    left: 20px;
+    top: 23px;
+}
+
+.Container_main ul li .delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Container_main ul li .delete-btn:hover {
+    background-color: #cc0000;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
